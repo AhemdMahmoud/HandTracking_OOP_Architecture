@@ -27,3 +27,34 @@ class HandDetector:
     def detect_hands(self, frame):
         # Process the frame to detect hands
         return hand_regions
+```
+### 2. HandLandmarks Class
+
+This class processes the detected hand regions to identify and mark the landmarks.
+```python
+class HandLandmarks:
+    def __init__(self, model):
+        # Initialize with the hand detection model
+        pass
+
+    def find_landmarks(self, hand_region):
+        # Process the hand region to find landmarks
+        return landmarks
+
+```
+### 3. HandTrackingApp Class
+
+This class is the main controller of the application, integrating hand detection and landmark processing. It handles the video input, runs detection, and displays the results
+
+
+``` python
+class HandTrackingApp:
+    def __init__(self, video_source=0):
+        # Initialize the video capture and detection components
+        pass
+
+    def run(self):
+        # Main loop to capture video, process frames, and display results
+        pass
+
+
